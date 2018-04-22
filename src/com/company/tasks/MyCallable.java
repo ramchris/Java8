@@ -29,7 +29,7 @@ public class MyCallable implements Callable<String> {
 		//create a list to hold the Future object associated with Callable
 		List<Future<String>> list = new ArrayList<Future<String>>();
 		//Create MyCallable instance
-		Callable<String> callable = new MyCallable(10);
+		Callable<String> callable = new MyCallable(1000);
 		for(int i=0; i< 100; i++){
 			//submit Callable tasks to be executed by thread pool
 			Future<String> future = executor.submit(callable);
