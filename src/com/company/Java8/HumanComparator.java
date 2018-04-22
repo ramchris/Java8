@@ -10,7 +10,7 @@ public class HumanComparator {
         humanList.add(new Human("jack" , "25"));
         humanList.add(new Human("Hack" , "65"));
         humanList.add(new Human("Back" , "45"));
-        humanList.sort(Comparator.comparing(Human::getName).thenComparing(Human::getAge));
+        humanList.sort(Comparator.comparing(Human::getAge).thenComparing(Human::getName));
         humanList.forEach(System.out::println);
     }
 }
