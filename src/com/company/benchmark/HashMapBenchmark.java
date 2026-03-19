@@ -19,6 +19,7 @@ public class HashMapBenchmark {
         // 2. Pre-calculated Capacity (count / 0.75 + 1)
         long start2 = System.nanoTime();
         int initialCapacity = (int) (count / 0.75f) + 1;
+        System.out.println("initialCapacity=" + initialCapacity );
         Map<Integer, Integer> map2 = new HashMap<>(initialCapacity);
         for (int i = 0; i < count; i++) {
             map2.put(i, i);
