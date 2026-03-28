@@ -61,7 +61,7 @@ public class ReentrantRunner {
 
     public void finished(){
 
-        System.out.println("Final COunt : " +count);
+        System.out.println("Final Count : " +count);
     }
 }
 
