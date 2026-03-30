@@ -24,9 +24,9 @@ public class PalindromeChecker {
 
     public static void main(String[] args) {
         String s1 = "radar";
-        String s2 = "hello";
+        String s2 = "level";
 
         System.out.println(s1 + " is a palindrome? " + isPalindrome(s1));
-       // System.out.println(s2 + " is a palindrome? " + isPalindrome(s2));
+        System.out.println(s2 + " is a palindrome? " + isPalindrome(s2));
     }
 }
